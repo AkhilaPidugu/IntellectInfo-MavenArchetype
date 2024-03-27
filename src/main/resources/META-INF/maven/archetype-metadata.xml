@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+                      xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd">
+
+    <modules>
+        <module id="${rootArtifactId}-application" dir="__rootArtifactId__-application"
+                name="${rootArtifactId}-application">
+            <fileSets>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/exception/handler</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/rest</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                </fileSet>
+            </fileSets>
+        </module>
+        <module id="${rootArtifactId}-dataaccess" dir="__rootArtifactId__-dataaccess"
+                name="${rootArtifactId}-dataaccess">
+            <fileSets>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/adapter</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/entity</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/mapper</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/repository</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                </fileSet>
+            </fileSets>
+        </module>
+        <module id="${rootArtifactId}-domain" dir="__rootArtifactId__-domain" name="${rootArtifactId}-domain">
+            <fileSets>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/entity</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/event</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/exception</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/service</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/valueobject</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                </fileSet>
+            </fileSets>
+        </module>
+        <module id="${rootArtifactId}-domainservices" dir="__rootArtifactId__-domainservices"
+                name="${rootArtifactId}-domainservices">
+            <fileSets>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java/services</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                </fileSet>
+            </fileSets>
+        </module>
+        <module id="${rootArtifactId}-inputport-rest" dir="__rootArtifactId__-inputport-rest"
+                name="${rootArtifactId}-inputport-rest">
+            <fileSets>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                </fileSet>
+            </fileSets>
+        </module>
+        <module id="${rootArtifactId}-inputport-webmvc" dir="__rootArtifactId__-inputport-webmvc"
+                name="${rootArtifactId}-inputport-webmvc">
+            <fileSets>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                </fileSet>
+            </fileSets>
+        </module>
+        <module id="${rootArtifactId}-outputport-database" dir="__rootArtifactId__-outputport-database"
+                name="${rootArtifactId}-outputport-database">
+            <fileSets>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                </fileSet>
+            </fileSets>
+        </module>
+        <module id="${rootArtifactId}-outputport-mq" dir="__rootArtifactId__-outputport-mq"
+                name="${rootArtifactId}-outputport-mq">
+            <fileSets>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                </fileSet>
+            </fileSets>
+        </module>
+        <module id="${rootArtifactId}-common" dir="__rootArtifactId__-common"
+                name="${rootArtifactId}-common">
+            <fileSets>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                </fileSet>
+            </fileSets>
+            <modules>
+                <module id="common-application" dir="common-application"
+                        name="common-application">
+                    <fileSets>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/main/java/application/handler</directory>
+                        </fileSet>
+                        <fileSet encoding="UTF-8">
+                            <directory>src/main/resources</directory>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/test/java</directory>
+                        </fileSet>
+                    </fileSets>
+                </module>
+                <module id="common-dataaccess" dir="common-dataaccess"
+                        name="common-dataaccess">
+                    <fileSets>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/main/java/dataaccess</directory>
+                        </fileSet>
+                        <fileSet encoding="UTF-8">
+                            <directory>src/main/resources</directory>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/test/java</directory>
+                        </fileSet>
+                    </fileSets>
+                </module>
+                <module id="common-domain" dir="common-domain"
+                        name="common-domain">
+                    <fileSets>
+                        <fileSet encoding="UTF-8">
+                            <directory>src/main/resources</directory>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/test/java</directory>
+                        </fileSet>
+                    </fileSets>
+                </module>
+            </modules>
+        </module>
+        <module id="${rootArtifactId}-infrastructure" dir="__rootArtifactId__-infrastructure"
+                name="${rootArtifactId}-infrastructure">
+            <modules>
+                <module id="kafka" dir="kafka"
+                        name="kafka">
+                    <modules>
+                        <module id="kafka-config-data" dir="kafka-config-data"
+                                name="kafka-config-data">
+                            <fileSets>
+                                <fileSet encoding="UTF-8">
+                                    <directory>src/main/java/kafka/config/data</directory>
+                                </fileSet>
+                                <fileSet encoding="UTF-8">
+                                    <directory>src/main/resources</directory>
+                                </fileSet>
+                                <fileSet filtered="true" encoding="UTF-8">
+                                    <directory>src/test/java</directory>
+                                </fileSet>
+                            </fileSets>
+
+                        </module>
+                        <module id="kafka-consumer" dir="kafka-consumer"
+                                name="kafka-consumer">
+                            <fileSets>
+                                <fileSet encoding="UTF-8">
+                                    <directory>src/main/java/kafka/consumer/config/</directory>
+                                </fileSet>
+                                <fileSet encoding="UTF-8">
+                                    <directory>src/main/resources</directory>
+                                </fileSet>
+                                <fileSet filtered="true" encoding="UTF-8">
+                                    <directory>src/test/java</directory>
+                                </fileSet>
+                            </fileSets>
+                        </module>
+                        <module id="kafka-model" dir="kafka-model"
+                                name="kafka-model">
+                            <fileSets>
+                                <fileSet encoding="UTF-8">
+                                    <directory>src/main/java/avro/model</directory>
+                                </fileSet>
+                                <fileSet encoding="UTF-8">
+                                    <directory>src/main/resources/avro</directory>
+                                </fileSet>
+                                <fileSet filtered="true" encoding="UTF-8">
+                                    <directory>src/test/java</directory>
+                                </fileSet>
+                            </fileSets>
+                        </module>
+                        <module id="kafka-producer" dir="kafka-producer"
+                                name="kafka-producer">
+                            <fileSets>
+                                <fileSet encoding="UTF-8">
+                                    <directory>src/main/java/kafka/producer/exception/</directory>
+                                </fileSet>
+                                <fileSet encoding="UTF-8">
+                                    <directory>src/main/java/kafka/producer/service/impl/</directory>
+                                </fileSet>
+                                <fileSet encoding="UTF-8">
+                                    <directory>src/main/resources</directory>
+                                </fileSet>
+                                <fileSet filtered="true" encoding="UTF-8">
+                                    <directory>src/test/java</directory>
+                                </fileSet>
+                            </fileSets>
+                        </module>
+                    </modules>
+                </module>
+                <module id="outbox" dir="outbox"
+                        name="outbox">
+                    <fileSets>
+                        <fileSet encoding="UTF-8">
+                            <directory>src/main/java/outbox/config</directory>
+                        </fileSet>
+                        <fileSet encoding="UTF-8">
+                            <directory>src/main/resources</directory>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/test/java</directory>
+                        </fileSet>
+                    </fileSets>
+                </module>
+                <module id="saga" dir="saga"
+                        name="saga">
+                    <fileSets>
+                        <fileSet encoding="UTF-8">
+                            <directory>src/main/java/saga</directory>
+                        </fileSet>
+                        <fileSet encoding="UTF-8">
+                            <directory>src/main/resources</directory>
+                        </fileSet>
+                        <fileSet filtered="true" encoding="UTF-8">
+                            <directory>src/test/java</directory>
+                        </fileSet>
+                    </fileSets>
+                </module>
+            </modules>
+        </module>
+    </modules>
+
+    <requiredProperties>
+        <requiredProperty key="groupId">
+            <defaultValue>com.ddd.example</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="artifactId">
+            <defaultValue>EXAMPLE</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="version">
+            <defaultValue>1.0.0-SNAPSHOT</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+</archetype-descriptor>
