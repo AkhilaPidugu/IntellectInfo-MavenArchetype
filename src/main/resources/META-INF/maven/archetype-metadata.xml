@@ -321,6 +321,15 @@
         </module>
     </modules>
 
+    <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>config/checkstyle</directory>
+            <includes>
+                <include>.editorconfig</include>
+                <include>**/*.xml</include>
+            </includes>
+        </fileSet>
+    </fileSets>
     <requiredProperties>
         <requiredProperty key="groupId">
             <defaultValue>com.ddd.example</defaultValue>
